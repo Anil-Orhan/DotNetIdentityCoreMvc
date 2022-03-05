@@ -1,0 +1,168 @@
+﻿@model CalculatorModel
+@using System.Threading.Tasks;
+@{
+    ViewData["Title"] = "Calculator Page";
+}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono"/>
+<link rel="stylesheet" href="/css/calculator.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/calculator.js"></script>
+
+
+
+    
+
+
+
+    <div class="container">
+        <div id="header">
+            <h3 style="color: #D0D5D9">Hesap Makinesi</h3>
+        </div>
+        <div id="calc" class="text-center">
+            <form form asp-controller="Home" asp-action="Calculator" method="post">
+                
+                
+                <div id="display">
+                    <div id="result">
+                        <p id="r1" value="0">@ViewData["sonuc"]</p>
+                    </div>
+                    <div id="previous">
+                            
+                        <input readonly asp-for="hesapText" name="hesapText" id="r2"  value="0"></input>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+
+            </form>
+            <div class="form-group" id="keyboard">
+                <div class="row">
+                    <button class="btn btn-light" value="7">7</button>
+                    <button class="btn btn-light" value="8">8</button>
+                    <button class="btn btn-light" value="9">9</button>
+                    <button id="ac" class="btn btn-danger" value="ac">AC</button>
+
+                </div>
+                <div class="row">
+                    <button class="btn btn-light" value="4">4</button>
+                    <button class="btn btn-light" value="5">5</button>
+                    <button class="btn btn-light" value="6">6</button>
+                    <button class="btn btn-warning" value="/">/</button>
+                    <button class="btn btn-warning" value="*">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-light " value="1">1</button>
+                    <button class="btn btn-light" value="2">2</button>
+                    <button class="btn btn-light" value="3">3</button>
+                    <button class="btn btn-warning" value="+">+</button>
+                    <button class="btn btn-warning" value="-">-</button>
+
+                    
+
+                </div>
+                <form form asp-controller="Home" asp-action="Calculator" method="post">
+                
+
+                <div class="form-group">
+                    <div class="row">
+                        <button class="btn btn-light btn-zero" value="0">0</button>
+                        <!-- <button class="invisible" value=""></button> -->
+
+                        <input class="btn btn-success btn-result" type="submit" asp-for="hesap" value="="/>
+                    </div>
+
+                    @* <button class="btn btn-warning" value=".">.</button>
+                *@
+                    <!-- <button class="invisible" value=""></button> -->
+
+                </div>
+                </form >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+@*
+<form asp-action="Calculator">
+    <div class="text-center">
+        <div class=" row text-center">
+            <div class="col-md-12 col-md-offset-12/ justify-content-center"
+                style="margin-top:50px;background-color:#1c1c1c">
+                <!-- start of header section -->
+                <div class="row header">
+                    <div class="col-md-2">
+                        <span class="glyphicon glyphicon glyphicon-menu-hamburger"></span>
+                    </div>
+                    <div class="col-md-8">
+                        <p>Hesap Makinesi</p>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="glyphicon glyphicon glyphicon-cog"></span>
+                    </div>
+                </div> <!-- header div -->
+                <!-- end of header section -->
+                <!-- start of textbox -->
+                <div id="myAlert" style=" margin-top:10px; text-align:center; align-content:center; height: 100px; "
+                    class="alert alert-success ">
+                    <strong style=" font-size:50px;">@ViewData["sonuc"]</strong>
+                </div>
+                <div class="row teaxtbox" placeholder="Sayı 1"
+                    style="border-bottom:1px; border-style:solid;border-color:black">
+                    <div class="col-md-12 padding-reset">
+                        <p><input placeholder="Sayı Giriniz" type="text" asp-for="sayi1" id="input1" /> </p>
+                    </div>
+                </div>
+                <div class="row teaxtbox" style=" border-bottom:1px; border-style:solid;border-color:black">
+                    <div class="col-md-12 padding-reset">
+                        <p><input placeholder="Sayı Giriniz" type="text" asp-for="sayi2" id="input2" /></p>
+                    </div>
+                </div>
+                <!-- end of textbox -->
+
+                <!-- start of button design -->
+                <div class="row commonbutton">
+                    <!-- first row -->
+                    <div class="col-md-2">
+                        <p><input class="islembuton" type="submit" asp-for="hesap" value="*" /> </p>
+                    </div>
+                    <div class="col-md-2">
+                        <p><input class="islembuton" type="submit" asp-for="hesap" value="-" /> </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><input class="islembuton" type="submit" asp-for="hesap" value="/" /> </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><input class="islembuton" type="submit" asp-for="hesap" value="+" />
+                        </p>
+                    </div>
+                    <div  class="col-md-12">
+                        <p><input class="islembuton" id="equal" type="submit" asp-for="hesap" value="=" />
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" onclick="cleartextboxes();" class="" name="" value="Temizle" id="del">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <p>TEST</p>
+             <button>TEST</button>
+
+
+        </div>
+    </div>
+    
+</form>*@
+
+
+
