@@ -2,14 +2,14 @@
 #### Bu bir .Net Core Mvc Projesidir(Eğitim)
 
 ## Frontend 
--Bootstrap 3
--JQuery
--JS
+- Bootstrap 3
+- JQuery
+- JS
 ## Data Base
 -MSSQL SERVER
 
 ## Versiyon ve Paketler
--.Net Core 3.1
+- .Net Core 3.1
 
 
 ![image](https://user-images.githubusercontent.com/61164526/156928892-211ccc0a-ec87-4c18-baf1-1f365e8d42a7.png)
@@ -18,8 +18,8 @@
 ## Kurulum
 
 #### Migration Kurulumu
--Proje çalıştırıladan önce veri tabanı update edilmelidir.
--Projenin içinde bulunan TomyaTask>Migration klasöründe ilgili migration dosyaları mevcuttur.
+- Proje çalıştırıladan önce veri tabanı update edilmelidir.
+- Projenin içinde bulunan TomyaTask>Migration klasöründe ilgili migration dosyaları mevcuttur.
 
 ![image](https://user-images.githubusercontent.com/61164526/156928980-c3e26c9e-bd93-42d4-8208-16812af4cb8d.png)
 
