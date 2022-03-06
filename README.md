@@ -17,7 +17,7 @@
 
 ## Kurulum
 
-####Migration Kurulumu
+#### Migration Kurulumu
 -Proje çalıştırıladan önce veri tabanı update edilmelidir.
 -Projenin içinde bulunan TomyaTask>Migration klasöründe ilgili migration dosyaları mevcuttur.
 
