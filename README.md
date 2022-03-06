@@ -6,7 +6,7 @@
 - JQuery
 - JS
 ## Data Base
--MSSQL SERVER
+- MSSQL SERVER
 
 ## Versiyon ve Paketler
 - .Net Core 3.1
