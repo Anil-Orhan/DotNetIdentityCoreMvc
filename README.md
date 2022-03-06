@@ -1,21 +1,21 @@
 # CoreMvc Hesap Makinesi Projesi
-Bu bir .Net Core Mvc Projesidir(Eğitim)
+#### Bu bir .Net Core Mvc Projesidir(Eğitim)
 
-##Frontend 
+## Frontend 
 -Bootstrap 3
 -JQuery
 -JS
-##Data Base
+## Data Base
 -MSSQL SERVER
 
-##Versiyon ve Paketler
+## Versiyon ve Paketler
 -.Net Core 3.1
 
 
 ![image](https://user-images.githubusercontent.com/61164526/156928892-211ccc0a-ec87-4c18-baf1-1f365e8d42a7.png)
 
 
-##Kurulum
+## Kurulum
 
 ####Migration Kurulumu
 -Proje çalıştırıladan önce veri tabanı update edilmelidir.
@@ -32,7 +32,7 @@ update-database -Context TomyaDb
 "update-database -Context TomyaDb" komutu çalıştırıldığında gerekli kurulum sağlanacaktır.
 
 
-####Connection String Tanımlaması 
+#### Connection String Tanımlaması 
 
 TomyaTask>appsettings.json
 
@@ -42,7 +42,7 @@ ilgili Connection String'in server kısmını kendi MSSQL server adresiniz ile d
 
 
 
-##Kayıt Onaylama
+## Kayıt Onaylama
 
 Üye olma işlemini gerçekleştirdikten sonra aşağıdaki görselde görünen onaylama sayfasına yönlendirme sağlanır.
 Buradan "Click here to confirm your account" linkine tıklayarak hesabınızı onaylamanız gerekmektedir.
