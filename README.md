@@ -5,7 +5,7 @@
 - Bootstrap 3
 - JQuery
 - JS
-## Data Base
+## Database
 - MSSQL SERVER
 
 ## Versiyon ve Paketler
