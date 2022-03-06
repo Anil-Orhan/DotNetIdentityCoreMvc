@@ -1,14 +1,14 @@
 # CoreMvc Hesap Makinesi Projesi
 Bu bir .Net Core Mvc Projesidir(Eğitim)
 
-###Frontend 
+##Frontend 
 -Bootstrap 3
 -JQuery
 -JS
-###Data Base
+##Data Base
 -MSSQL SERVER
 
-###Versiyon ve Paketler
+##Versiyon ve Paketler
 -.Net Core 3.1
 
 
@@ -42,7 +42,7 @@ ilgili Connection String'in server kısmını kendi MSSQL server adresiniz ile d
 
 
 
-###Kayıt Onaylama
+##Kayıt Onaylama
 
 Üye olma işlemini gerçekleştirdikten sonra aşağıdaki görselde görünen onaylama sayfasına yönlendirme sağlanır.
 Buradan "Click here to confirm your account" linkine tıklayarak hesabınızı onaylamanız gerekmektedir.
