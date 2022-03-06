@@ -35,7 +35,7 @@ $(document).ready(function() {
             girilenTus = "0";
             anaMetin = "0";
             $("#r2").val(girilenTus);
-            
+            $("#previous p").html(anaMetin);
             $("#result p").html(anaMetin);
 
         } else {

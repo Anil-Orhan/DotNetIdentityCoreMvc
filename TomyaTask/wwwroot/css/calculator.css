@@ -2,22 +2,24 @@
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
 }
+
 #r2 {
     background: transparent;
     border: none;
-    user-select: none;
     color: antiquewhite;
     font-family: 'Share Tech Mono', monospace;
     text-align: right;
+    user-select: none;
 }
-#r2:target{ border: none;}
-#r2:target-within {
-    border: none;
-}
+
+#r2:target { border: none; }
+
+#r2:target-within { border: none; }
+
 #calc {
-    background: #060d24;
+    background: #454549;
     border: 1px solid;
-    border-color: #abc6c2;
+    border-color: white;
     border-radius: 8px;
     display: block;
     height: auto;
@@ -30,23 +32,20 @@
 }
 
 #display {
-    background: #bcbcbc;
+    background: rgb(38, 38, 38);
     border-radius: 8px;
+    color: #097a15;
     font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5em;
     margin: 16px 12px 10px 16px;
     padding: 8px;
     text-align: center;
-    font-size: 1.5em;
 }
 
-#result p {
-    font-size: 1.8em;
-}
+#result p { font-size: 1.8em; }
 
 #result,
-#previous {
-    text-align: right;
-}
+#previous { text-align: right; }
 
 #keyboard {
     display: inline-block;
@@ -54,9 +53,7 @@
     text-align: center;
 }
 
-.row {
-    margin-top: 4px;
-}
+.row { margin-top: 4px; }
 
 .last-row {
     float: left;
@@ -68,23 +65,30 @@ button {
     width: 62px;
 }
 
-.invisible {
-    width: 0;
-}
+.invisible { width: 0; }
 
-.btn-zero {
-    width: 196px;
-}
+.btn-zero { width: 196px; }
 
 .btn-result {
+    background: #097A15;
     float: right;
+    font-size: 18px;
     height: 60px;
-    width: 125px;
     margin-left: 4px;
+    width: 125px;
 }
 
+.btn-result:hover { background: #086A12 }
+
 #ac {
-    width: 125px;
+    background: rgb(174, 13, 13);
+    border-color: rgb(251, 63, 63);
     float: right;
     margin-left: 4px;
+    width: 125px;
+}
+
+#ac:hover {
+    background: rgb(150, 11, 11);
+    border-color: rgb(234, 58, 58)
 }

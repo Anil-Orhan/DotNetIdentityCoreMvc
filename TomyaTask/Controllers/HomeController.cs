@@ -4,10 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using BusinessLayer.Abstract;
-using Microsoft.AspNetCore.Authorization;
 using TomyaTask.Models;
+using Controller = Microsoft.AspNetCore.Mvc.Controller;
 
 namespace TomyaTask.Controllers
 {
@@ -31,13 +33,13 @@ namespace TomyaTask.Controllers
         {
             return View();
         }
-        [Authorize]
+        [Microsoft.AspNetCore.Authorization.Authorize]
         public IActionResult Calculator()
         {
             ViewData["sonuc"] = "0";
             return View();
         }
-        [HttpPost]
+        [Microsoft.AspNetCore.Mvc.HttpPost]
         public IActionResult Calculator(CalculatorModel cal,string hesapText)
         {
             try
@@ -53,6 +55,8 @@ namespace TomyaTask.Controllers
             }
             catch (Exception e)
             {
+
+                TempData["alert"] = "Geçerli Bir Değer Girmediniz!";
                 
             }
 
