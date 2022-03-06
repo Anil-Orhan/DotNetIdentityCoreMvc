@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using TomyaTask.Models;
 
 namespace TomyaTask.Controllers
@@ -30,26 +31,35 @@ namespace TomyaTask.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult Calculator()
         {
+            ViewData["sonuc"] = "0";
             return View();
         }
         [HttpPost]
         public IActionResult Calculator(CalculatorModel cal,string hesapText)
         {
-           
-          
-            if (cal.hesap=="=")
+            try
             {
-                 cal.sonuc= _calculatorService.Calculation(cal.hesapText);
-                 ViewData["sonuc"]= cal.sonuc;
+                if (cal.hesap == "=")
+                {
+                    cal.sonuc = _calculatorService.Calculation(cal.hesapText);
+                    ViewData["sonuc"] = cal.sonuc;
 
+                    return View();
+
+                }
             }
-        
+            catch (Exception e)
+            {
+                
+            }
 
-           
-            return View();
+            return RedirectToAction("Error");
+
+
+
 
         }
 

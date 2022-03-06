@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using BusinessLayer.Abstract;
@@ -9,10 +10,24 @@ namespace BusinessLayer.Concrete
 {
     public class CalculatorManager : ICalculatorService
     {
-        public string Calculation(string calculationString)
+        public  string Calculation(string calculationString)
         {
-            Console.Write(calculationString);
-            return "BUSSINES RESULT";
+           
+
+           
+                return Evaluate(calculationString).ToString();
+         
+
+
+          
+        }
+        public static double Evaluate(string expression)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("expression", typeof(string), expression);
+            DataRow row = table.NewRow();
+            table.Rows.Add(row);
+            return double.Parse((string)row["expression"]);
         }
 
         public decimal Addition(params int[] numbers)

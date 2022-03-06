@@ -10,7 +10,7 @@
 
 
 
-    
+
 
 
 
@@ -19,25 +19,22 @@
             <h3 style="color: #D0D5D9">Hesap Makinesi</h3>
         </div>
         <div id="calc" class="text-center">
-            <form form asp-controller="Home" asp-action="Calculator" method="post">
+            
                 
                 
                 <div id="display">
                     <div id="result">
                         <p id="r1" value="0">@ViewData["sonuc"]</p>
                     </div>
-                    <div id="previous">
-                            
-                        <input readonly asp-for="hesapText" name="hesapText" id="r2"  value="0"></input>
+                    <div  id="previous">
+                        <p id="" value="0">0</p>
+                       
+                       
                     </div>
                 </div>
                 
-                
-                
-                
-                
 
-            </form>
+          
             <div class="form-group" id="keyboard">
                 <div class="row">
                     <button class="btn btn-light" value="7">7</button>
@@ -63,23 +60,22 @@
                     
 
                 </div>
-                <form form asp-controller="Home" asp-action="Calculator" method="post">
+                
                 
 
                 <div class="form-group">
                     <div class="row">
                         <button class="btn btn-light btn-zero" value="0">0</button>
                         <!-- <button class="invisible" value=""></button> -->
-
+                        <form form asp-controller="Home" asp-action="Calculator" method="post">
+                        <input readonly asp-for="hesapText" style="visibility: hidden; display: none"  type="text" name="hesapText" id="r2"  value="0"/>
                         <input class="btn btn-success btn-result" type="submit" asp-for="hesap" value="="/>
+                        
+                        </form >
                     </div>
 
-                    @* <button class="btn btn-warning" value=".">.</button>
-                *@
-                    <!-- <button class="invisible" value=""></button> -->
-
                 </div>
-                </form >
+               
 
             </div>
 

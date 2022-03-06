@@ -15,6 +15,8 @@ $(document).ready(function() {
                 anaMetin = anaMetin.substring(0, anaMetin.length - 1);
                 anaMetin += girilenTus;
                 $("#r2").val(anaMetin);
+                $("#previous p").html(anaMetin);
+
 
             } else {
 
@@ -24,7 +26,7 @@ $(document).ready(function() {
                 anaMetin += girilenTus;
                 
                 $("#r2").val(anaMetin);
-
+                $("#previous p").html(anaMetin);
 
             }
 
@@ -33,6 +35,7 @@ $(document).ready(function() {
             girilenTus = "0";
             anaMetin = "0";
             $("#r2").val(girilenTus);
+            
             $("#result p").html(anaMetin);
 
         } else {
