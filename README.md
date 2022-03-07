@@ -17,6 +17,15 @@
 
 ## Kurulum
 
+#### Connection String Tanımlaması 
+
+TomyaTask>appsettings.json
+
+![image](https://user-images.githubusercontent.com/61164526/156929141-dc329407-4c46-43fb-bb9e-027a0a46a33c.png)
+
+ilgili Connection String'in server kısmını kendi MSSQL server adresiniz ile değiştirmeniz yeterlidir.
+
+
 #### Migration Kurulumu
 - Proje çalıştırıladan önce veri tabanı update edilmelidir.
 - Projenin içinde bulunan TomyaTask>Migration klasöründe ilgili migration dosyaları mevcuttur.
@@ -32,13 +41,6 @@ update-database -Context TomyaDb
 "update-database -Context TomyaDb" komutu çalıştırıldığında gerekli kurulum sağlanacaktır.
 
 
-#### Connection String Tanımlaması 
-
-TomyaTask>appsettings.json
-
-![image](https://user-images.githubusercontent.com/61164526/156929141-dc329407-4c46-43fb-bb9e-027a0a46a33c.png)
-
-ilgili Connection String'in server kısmını kendi MSSQL server adresiniz ile değiştirmeniz yeterlidir.
 
 
 
