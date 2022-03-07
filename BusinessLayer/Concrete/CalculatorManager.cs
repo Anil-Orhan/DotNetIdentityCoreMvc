@@ -19,11 +19,11 @@ namespace BusinessLayer.Concrete
             if (!char.IsDigit(calculationString[calculationString.Length - 1]))
             {
                 calculationString = calculationString + "0";
-                return Evaluate(calculationString).ToString();
+                return Math.Round(Evaluate(calculationString), 2).ToString();
             }
 
 
-            return Evaluate(calculationString).ToString();
+            return Math.Round(Evaluate(calculationString), 2).ToString();
         }
 
         public static double Evaluate(string expression)

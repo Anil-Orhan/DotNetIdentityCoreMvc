@@ -64,8 +64,10 @@ button {
     margin: 2px;
     width: 62px;
 }
-
-.invisible { width: 0; }
+#logout{ margin: 0px;}
+.invisible {
+    width: 0;
+}
 
 .btn-zero { width: 196px; }
 

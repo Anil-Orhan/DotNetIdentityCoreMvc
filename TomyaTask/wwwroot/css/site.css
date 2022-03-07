@@ -5,19 +5,24 @@ body {
     color: rgb(240, 255, 254);
 }
 
-.navbar { padding: 0px; }
+
 
 li {
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 20px;
+   
+}
+li:hover {
+
+    background: #1861AC;
+    color: #e5e5e5;
+}
+.nav-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-a.navbar-brand {
-    text-align: center;
-    white-space: normal;
-    word-break: break-all;
-}
 
 /* Provide sufficient contrast against white background */
 
@@ -28,7 +33,7 @@ a { color: #0366d6; }
     border-color: #1861ac;
     color: #fff;
 }
-
+.navbar{ margin: 0px;padding: 0px;}
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     background-color: #1b6ec2;
